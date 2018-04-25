@@ -99,6 +99,8 @@ Nous arrivons donc au compromis suivant
     (théorème central limite, loi forte des grands nombres).
 \end{remark}
 
+\section{Équiprobabilité et analyse combinatoire}
+
 \begin{definition}
     [Équiprobabilité]
 
@@ -123,6 +125,31 @@ Nous arrivons donc au compromis suivant
         = \frac {\card(E)} {\card(\Omega)}.
     \end{align}
 \end{proposition}
+
+Nous utiliserons les formules suivantes pour le dénombrement.
+
+\begin{tikzpicture}
+    [
+        grow                    = right,
+        sibling distance        = 5em,
+        level distance          = 10em,
+        edge from parent/.style = {draw, -latex},
+        sloped
+    ]
+    \node {Permutation?}
+    child {%
+        node {Objects distincts?}
+        edge from parent node[above] {oui}
+
+        child {%
+            node {$n!$}
+            edge from parent node[above] {oui}
+        }
+        child {%
+            node {$\frac {n!} {n_1!\dots n_k!}$}
+        }
+    };
+\end{tikzpicture}
 
 \subsection{Espérance}
 
