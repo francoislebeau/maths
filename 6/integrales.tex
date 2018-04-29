@@ -348,6 +348,31 @@ en réduisant le calcul d'intégrale à \emph{une primitivation et une soustract
     \end{itemize}
 \end{proposition}
 
+\begin{example}
+    [Intégrale d'un polynôme sur un intervalle symétrique]
+    
+    Supposons que nous voulons calculer l'intégrale
+    \begin{align}
+        I = \int_{-4}^4 x^5 - 2x^4 + 3x^3 - 5x^2 + 6x - 4 \dd x.
+    \end{align}
+    
+    Par la propriété d'imparité,
+    l'intégrale de tous les termes d'ordre impair s'annule,
+    de sorte que
+    \begin{align}
+        I = \int_{-4}^4 - 2x^4 - 5x^2 - 4 \dd x.
+    \end{align}
+    
+    En utilisant la propriété de parité,
+    on obtient
+    \begin{align}
+        I = 2 \int_0^4 - 2x^4 - 5x^2 - 4 \dd x.
+    \end{align}
+    
+    Cette dernière intégrale est nettement plus simple à calculer,
+    car la primitive usuelle s'annule en $0$.
+\end{example}
+
 \begin{definition}
     [Intégrale sur l'intervalle renversé]
 
